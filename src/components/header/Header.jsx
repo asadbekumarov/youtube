@@ -63,6 +63,7 @@ export default function Header({ isOpen, setIsOpen }) {
                 <div className="flex items-center gap-2 py-[4px]">
                   <img src={Google} alt="" />
                   <p className="text-white">Google hisobi</p>
+                  {/* <p></p> */}
                 </div>
                 <div className="flex items-center gap-2 py-[4px]">
                   <img src={Google} alt="" />
