@@ -18,13 +18,13 @@ export default function Header({ isOpen, setIsOpen }) {
           <div className="flex items-center gap-6">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`${isOpen ? "fixed top-0 left-[-300px]" : "h-scree"}`}
+              className={`${isOpen ? "fixed top-0 right-[-300px]" : ""}`}
             >
               <img className="cursor-pointer" src={Menu} alt="menu-img" />
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`${isOpen ? "h-scree" : "fixed top-0 left-[-300px]"}`}
+              className={`${isOpen ? "h-scree" : "fixed top-0 left-[-300px] "}`}
             >
               <img className="cursor-pointer" src={Menu} alt="menu-img" />
             </button>
@@ -63,7 +63,6 @@ export default function Header({ isOpen, setIsOpen }) {
                 <div className="flex items-center gap-2 py-[4px]">
                   <img src={Google} alt="" />
                   <p className="text-white">Google hisobi</p>
-                  {/* <p></p> */}
                 </div>
                 <div className="flex items-center gap-2 py-[4px]">
                   <img src={Google} alt="" />

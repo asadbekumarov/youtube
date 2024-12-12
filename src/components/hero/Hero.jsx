@@ -27,7 +27,7 @@ import Logo from "../../assets/images/header-img/Logo.png";
 
 import Menu from "../../assets/images/header-img/menu.svg";
 
-export default function Hero({ isOpen, setIsOpen }) {
+export default function Hero({ isOpen }) {
   console.log(isOpen);
 
   return (
@@ -35,7 +35,9 @@ export default function Hero({ isOpen, setIsOpen }) {
       <section className="pl-7 pr-7 bg-[#212121] flex">
         <aside className="w-[240px] pr-5 flex">
           <div
-            className={`${isOpen ? "-translate-x" : "-translate-x-[500px]"}`}
+            className={`transition-transform duration-300  ${
+              isOpen ? "-translate-x" : "-translate-x-[500px]"
+            }`}
           >
             <div className="flex items-center gap-6 mb-5">
               <img src={Home} alt="home-img" />
@@ -112,7 +114,7 @@ export default function Hero({ isOpen, setIsOpen }) {
                 <img src={Leftnotification} alt="Leftnotification" />
               </div>
             </div>
-            <div className="flex text-white gap-6 mb-5 items-centeE">
+            <div className="flex text-white gap-6 mb-5 items-center">
               <img src={Design} alt="Design" />
               <div className="flex justify-between items-center w-[200px]">
                 <p>Discover Design</p>
